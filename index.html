@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dongfang Liu's website</title>
+        <meta name="description" content="UTSA">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/hongyu.jpg"  backgroundSize="contain" alt="Hongyu Liu">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">Df Liu</h3>
+                                <p class="profile-description">The University of Texas at San Antonio</p>
+                                <p class="profile-description">liuhyscc AT gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="#research"><i class="fa fa-newspaper-o"></i>Research</a></li>
+                        <li><a href="#publications"><i class="fa fa-book"></i>Publications</a></li>
+                        <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/dongfang_2.jpg" alt="Hongyu Liu">
+                </div>
+                <h3 class="profile-title">Dongfang Liu, PhD</h3>
+                <p class="profile-description">Postdoctoral Researcher</p>
+                <p class="profile-description">Purdue University</p>
+                <p class="profile-description">liuhyscc AT gmail.com</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#top"><i class="fa fa-home"></i>Resume</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+                    <li><a href="#research"><i class="fa fa-newspaper-o"></i>Research</a></li>
+                    <li><a href="#publications"><i class="fa fa-book"></i>Publications</a></li>
+                    <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=_Voig00AAAAJ&hl=en" target="_blank"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div> <!-- .social-icons -->
+        </div> <!-- .sidebar-menu -->
+
+        <div class="banner-bg" id="top">
+          <!--<div class="banner-overlay"></div>-->
+            <!-- <div class="welcome-text">
+                <h2>Boiler up</h2>
+            </div> -->
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                
+                    <!-- ABOUT -->
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">About Me</h4>
+                            <p> I am a postdoctoral researcher in the Department of Computer Science at Purdue University, under the supervision of Prof. <a rel="nofollow" href="https://www.cs.purdue.edu/homes/xyzhang/" target="_blank">Xiangyu Zhang</a>. My research interests include, but not limited to, program analysis, system reliability and security, and system performance. I received my Ph.D from the University of Texas at San Antonio, advised by Dr. <a rel="nofollow" href="http://www.cs.utsa.edu/~tongpingliu/" target="_blank">Tongping Liu</a> in 2019.</p>
+                            <hr>
+                        </div>
+                    </div> <!-- #about -->
+                    </div>
+                    
+                    <!-- Research -->
+                    <div class="page-section" id="research">
+                    <h4 class="widget-title">Research</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <div class="project-item">
+                        <b>Record and Replay</b>
+                        <!--<p>
+                        Reproducing errors of multithreaded programs is very challenging due to many intrinsic and external non-deterministic factors. Existing RnR systems achieve significant progress in terms of performance overhead, but none target the in-situ setting, in which replay occurs within the same process as the recording process. Also, most cannot achieve identical replay, which may prevent the reproduction of some errors.
+                        </p>-->
+                        <p>
+                        iReplayer aims to identically replay multithreaded programs in the original process, under the "in-situ" setting. The novel in-situ and identical replay of iReplayer makes it more likely to reproduce errors, and allows it to directly employ debugging mechanisms (e.g. watchpoints) to aid failure diagnosis. iReplayer implements multiple methods to reduce its performance and support identical replay. Currently, iReplayer only incurs around 3% performance overhead, which allows it to be always enabled in the production environment. iReplayer enables a range of possibilities, and this paper presents three examples: two automatic tools for detecting buffer overflows and use-after-free bugs, and one interactive debugging tool that is integrated with GDB.
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                    </div> <!-- .research-holder -->
+                    <hr>
+
+                    <!-- publications -->
+                    <div class="page-section" id="publications">
+                    <h4 class="widget-title">Publications</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <dl class="dl-horizontal">
+                          <dt>OOPSLA 2020</dt>
+                          <dd>
+                            <b>WATCHER: In-Situ Failure Diagnosis</b> <a href="papers/Watcher-OOPSLA20.pdf"><i class="fa fa-file-pdf-o"></i></a></br>
+                            <b>Hongyu Liu</b>, Sam Silvestro, Xiangyu Zhang, Jian Huang, and Tongping Liu. </br>
+                            Proc. ACM Program. Lang. 4, OOPSLA, Article 143 (November 2020).
+                          </dd>
+                          <dt>ASE 2020</dt>
+                          <dd>
+                            <b>Prober: Practically Defending Overflows with Page Protection</b> <a href="papers/Prober-ASE20.pdf"><i class="fa fa-file-pdf-o"></i></a></br>
+                            <b>Hongyu Liu*</b>, Ruiqin Tian*, Bin Ren, and Tongping Liu. (*equal contribution) </br>
+                            In 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20), Virtual Event, Australia. ACM, New York, NY, USA.
+                          </dd>
+                          <dt>CGO 2019</dt>
+                          <dd>
+                            <b>CSOD: Context-Sensitive Overflow Detection</b> <a href="papers/CSOD-CGO19.pdf"><i class="fa fa-file-pdf-o"></i></a></br>
+                            <b>Hongyu Liu</b>, Sam Silvestro Xiaoyin Wang, Lide Duan, Tongping Liu. </br>
+                            In Proceedings of the 2019 International Symposium on Code Generation and Optimization (CGO 2019). IEEE Press, Washington DC, USA. 
+                          </dd>
+                          <dt>MICRO 2018</dt>
+                          <dd>
+                            <b>Sampler: PMU-based Sampling to Detect Memory Errors Latent in Production Software</b> <a href="papers/Sampler-Micro18.pdf"><i class="fa fa-file-pdf-o"></i></a></br>
+                            Sam Silvestro, <b>Hongyu Liu</b>, Tong Zhang, Changhee Jung, Dongyoon Lee, Tongping Liu. </br>
+                            The 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO), Fukuoka, Japan.
+                          </dd>
+                          <dt>Security 2018</dt>
+                          <dd>
+                            <b>Guarder: A Tunable Secure Allocator</b> <a href="papers/Guarder-Security18.pdf"><i class="fa fa-file-pdf-o"></i></a></br>
+                            Sam Silvestro, <b>Hongyu Liu</b>, Tianyi Liu, Zhiqiang Lin, and Tongping Liu. </br>
+                            In Proceedings of 27th {USENIX} Security Symposium ({USENIX} Security 18. USENIX Association, Baltimore, MD, USA.
+                          </dd>
+                          <dt>PLDI 2018</dt>
+                          <dd>
+                            <b>iReplayer: In-situ and Identical Record-and-Replay for Multithreaded Applications</b> <a href="papers/iReplayer-PLDI2018.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></br>
+                            <b>Hongyu Liu</b>, Sam Silvestro, Wei Wang, Chen Tian, and Tongping Liu. </br>
+                            In Proceedings of 39th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI’18). ACM, Philadelphia, PA, USA.
+                          </dd>
+                          <dt>CCS  2017</dt>
+                          <dd> 
+                            <b>FreeGuard: A Faster Secure Heap Allocator</b> <a href="papers/freeguard-ccs2017.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></br>
+                            Sam Silvestro, <b>Hongyu Liu</b>, Corey Crosser, Zhiqiang Lin, and Tongping Liu. </br>
+                            In Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security (CCS'17). ACM, New York, NY, USA, 2389-2403. 
+                          </dd>
+                          <dt>ASE  2017</dt>
+                          <dd>
+                            <b>UNDEAD: detecting and preventing deadlocks in production software</b> <a href="papers/undead-ase2017.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></br>
+                            Jinpeng Zhou, Sam Silvestro, <b>Hongyu Liu</b>, Yan Cai, and Tongping Liu. </br>
+                            In Proceedings of the 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE 2017). IEEE Press, Piscataway, NJ, USA, 729-740. 
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    </div> <!-- .publications-holder -->
+                    <hr>
+                    
+                    <!-- work experience -->
+                    <div class="page-section" id="services">
+                    <h4 class="widget-title">Work Experience</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <div class="project-item">
+                        <ul>
+                          <li><b>Research intern </b> @ Alibaba DAMO Academy, Mentored by Dr. Lide Duan
+                              <p>July 2019 - Dec. 2019, Sunnyvale, California</p>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    </div> <!-- .contact-form -->
+                    <hr>
+
+                    <!-- Service -->
+                    <div class="page-section" id="services">
+                    <h4 class="widget-title">Services</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <div class="project-item">
+                        <ul>
+                          <li><b>Reviewer</b>: IEEE Access 2020</li>
+                          <li><b>Sub-Reviewer</b>: ICPADS 2016</li>
+                          <li>EuroSys'20 Shadow PC member</li>
+                          <li><b>Student Volunteer</b>: RTSS 2015, ICSE 2016, PLDI 2018</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    </div> <!-- .contact-form -->
+                    <hr>
+
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                          <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=ubcKPhBPgXUfkNsB2U63LQjLkn3-FjAMmvrqlRrU9WU&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+                          <p>The template of this website is designed by <a href="http://www.templatemo.com/live/templatemo_441_volton">templatemo</a>.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
+</html>
