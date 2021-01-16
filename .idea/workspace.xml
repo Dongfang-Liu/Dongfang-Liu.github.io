@@ -15,13 +15,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="192" column="97" selection-start-line="192" selection-start-column="97" selection-end-line="192" selection-end-column="97" />
+            <state relative-caret-position="282">
+              <caret line="132" column="62" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fa fa-cogs</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,9 +38,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1869" />
-    <option name="y" value="86" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="84" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -50,6 +55,11 @@
             <path>
               <item name="Homepage" type="b2602c69:ProjectViewProjectNode" />
               <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -87,15 +97,15 @@
       <option name="presentableId" value="Default" />
       <updated>1610771111352</updated>
       <workItem from="1610771114915" duration="112000" />
-      <workItem from="1610818485718" duration="1530000" />
+      <workItem from="1610818485718" duration="4405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1642000" />
+    <option name="totallyTimeSpent" value="4517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1869" y="86" width="1440" height="877" extended-state="0" />
+    <frame x="-14" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
@@ -129,8 +139,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="192" column="97" selection-start-line="192" selection-start-column="97" selection-end-line="192" selection-end-column="97" />
+        <state relative-caret-position="282">
+          <caret line="132" column="62" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
         </state>
       </provider>
     </entry>
