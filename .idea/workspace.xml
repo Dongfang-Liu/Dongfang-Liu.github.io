@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06efc18f-e84d-42ad-8062-b807bd787a2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hongyu.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="224" column="30" lean-forward="true" selection-start-line="224" selection-start-column="30" selection-end-line="224" selection-end-column="30" />
+            <state relative-caret-position="236">
+              <caret line="168" column="56" selection-start-line="168" selection-start-column="50" selection-end-line="168" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -26,6 +28,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fa fa-cogs</find>
+      <find>liu</find>
+      <find>hongyu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -38,8 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -55,6 +58,11 @@
             <path>
               <item name="Homepage" type="b2602c69:ProjectViewProjectNode" />
               <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Homepage" type="b2602c69:ProjectViewProjectNode" />
@@ -97,18 +105,19 @@
       <option name="presentableId" value="Default" />
       <updated>1610771111352</updated>
       <workItem from="1610771114915" duration="112000" />
-      <workItem from="1610818485718" duration="5325000" />
+      <workItem from="1610818485718" duration="5895000" />
+      <workItem from="1611172982730" duration="715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5437000" />
+    <option name="totallyTimeSpent" value="6722000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -139,8 +148,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="224" column="30" lean-forward="true" selection-start-line="224" selection-start-column="30" selection-end-line="224" selection-end-column="30" />
+        <state relative-caret-position="236">
+          <caret line="168" column="56" selection-start-line="168" selection-start-column="50" selection-end-line="168" selection-end-column="56" />
         </state>
       </provider>
     </entry>
