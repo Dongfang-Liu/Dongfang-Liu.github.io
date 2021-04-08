@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06efc18f-e84d-42ad-8062-b807bd787a2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/titlebg.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="1755">
               <caret line="117" column="396" selection-start-line="117" selection-start-column="396" selection-end-line="117" selection-end-column="396" />
             </state>
           </provider>
@@ -41,8 +41,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-122" />
-    <option name="y" value="59" />
+    <option name="y" value="376" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -121,16 +120,15 @@
       <workItem from="1617397058673" duration="243000" />
       <workItem from="1617397769282" duration="1815000" />
       <workItem from="1617544898205" duration="28000" />
-      <workItem from="1617917661984" duration="1514000" />
+      <workItem from="1617917661984" duration="2059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14178000" />
+    <option name="totallyTimeSpent" value="14723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-122" y="59" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -163,7 +161,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="1755">
           <caret line="117" column="396" selection-start-line="117" selection-start-column="396" selection-end-line="117" selection-end-column="396" />
         </state>
       </provider>
