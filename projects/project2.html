@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dongfang Liu's website</title>
+        <meta name="description" content="UTSA">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </head>
+    <style>
+        .project-container{
+            max-width: 85%;
+            height: 100%;
+            margin: 50px auto;
+        }
+        .project-detail-title .title-text{
+            font-size: 24px;
+            font-weight: 600;
+            height: 60px;
+            vertical-align: middle;
+            line-height: 40px;
+            display: inline;
+        }
+
+        .project-detail-title img{
+            height: 50px; 
+            width: auto;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .project-detail-image{
+            height: 400px;
+            width: auto;
+            max-width: 85%;
+            margin: 30px auto;
+        }
+        .project-content .title{
+            line-height: 30px;
+        }
+
+        .project-content div{
+            margin-bottom: 50px;
+        }
+
+        .project-detail-image img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        *{margin: 0;padding: 0}
+    li{list-style: none}
+    .bnner{
+        width: 800px;
+        position: relative;
+        margin: 25px auto;
+    }
+    .nav{
+        width: 800px;
+        height: 340px;
+        /* border: 1px solid; */
+        overflow: hidden;
+    }
+    .nav_img{
+        float: left;
+        margin-left: 0px;
+        width: 2400px;
+        /* width: 4950px; */
+        font-size: 0;
+    }
+    .nav_img img{
+        height: 100%;
+        width: 800px;
+        vertical-align: middle;
+    }
+    .nav_xiao{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+ 
+    }
+    .nav_xiao>ul{
+        display: flex;
+    }
+    .nav_xiao>ul>li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: grey;
+        margin-left: 5px;
+        opacity: 0.7;
+    }
+    .nav_xiao>ul .mos{
+        background: black;
+        opacity: 0.7;
+    }
+    .nav_left>div:nth-child(1){
+        padding: 10px 0 10px 0;
+        position: absolute;
+        left: 0;
+        top: 30%;
+        background-color: white;
+        opacity: 0.9;
+        font-size: 50px;
+    }
+    .nav_left>div:nth-child(1) p{
+        width: 25px;
+        height: 25px;
+        border: 3px solid grey;
+        border-width: 0px 3px 3px 0px;
+        transform: rotate(-225deg);
+        -webkit-transform: rotate(-225deg);
+    }
+    .nav_left>div:nth-child(2){
+        padding: 10px 0 10px 0;
+        position: absolute;
+        right: 0;
+        top: 30%;
+        background-color: white;
+        opacity: 0.9;
+        font-size: 50px;
+    }
+    .nav_left>div:nth-child(2) p{
+        width: 25px;
+        height: 25px;
+        border: 3px solid grey;
+        border-width: 0px 3px 3px 0px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .bnner_er ul>li>img{
+        width: 120px;
+        height: 120px;
+    }
+ 
+    .bnner_er>div{
+        width: 250px;
+        overflow: hidden;
+    }
+    .bnner_er ul{
+        width: 1008px;
+        /*display: flex;*/
+        /*overflow: hidden;*/
+    }
+    .bnner_er ul>li{
+        width: 250px;
+        height: 120px;
+        float: left;
+        border: 1px solid red;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="project-container">
+        <div class="project-detail-title"  style="text-align: center;">
+            <p class="title-text">Vision-Anchored Automation of Bird-Sized UAVs in Unknown Cluttered Indoor Environments</p><img src="../img/nsf.png">
+        </div>
+        <content>
+            <!-- <div class="project-detail-image">
+                <img src="../img/visual rec.png">
+            </div> -->
+            <div class="bnner">
+                <div class="nav">
+                <div class="nav_img">
+                    <img src="../img/transflow.png" alt="">
+                    <img src="../img/visual rec.png" alt="">
+                    <img src="../img/Selfadversial.png" alt="">
+                    <!-- <img src="../img/visual rec.png" alt="">
+                    <img src="../img/SG-Net.png" alt=""> -->
+                </div>
+            </div>
+                <div class="nav_xiao">
+                    <ul>
+                        <li class="mos"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- <div class="nav_left">
+                    <div><p></p></div>
+                    <div><p></p></div>
+                </div> -->
+            </div>
+            <div class="project-content">
+               <div>
+                * <b class="title">Project Goals</b>
+                <p>In many real-world applications, autonomous unmanned aerial vehicles (UAVs) can be used to explore unknown, cluttered indoor spaces where GPS access and communication are often denied. 
+                    To accommodate the confined working space, however, UAVs have a small body size (roughly the size of a bird). 
+                    Such small size UVAs require lightweight and power-efficient sensors. Therefore, this research project aims to develop full automation for bird-sized UAVs within unknown and cluttered indoor environments using only an RGB-D camera.</p>
+               </div>
+                <div>
+                * <b class="title">Research Challenges</b>
+                <p>Although vision-only UAVs are advantageous for system assembly, their maneuver becomes increasingly difficult, without having measures from other sensors (e.g., Radars and LiDARs). 
+                    Consequently, for bird-sized UAVs to achieve automation, two fundamental challenges need to be addressed for UAV automation: </p>
+                    <p style="text-indent: 20px;">(1) How to construct visual perception to have a holistic yet computationally efficient understanding of the surrounding environment using only a vision sensor. </p>
+                    <p style="text-indent: 20px;">(2) Leveraging the established perception system, how to employ visual navigation to perform target-driven, safety-critical operations without relying on maps or GPS. </p>
+                </div>
+                <div>
+                    * <b class="title">Current/Final Results (summary)</b>
+                    <p>The current results involve algorithm development for object recognition, depth estimation, and optical flows estimation using vision sensors, especially cameras, to establish a solid base for UAV automation.</p>
+                </div>
+                <div>
+                    * <b class="title">Publications</b>
+                    <p style="text-indent: 20px;">1. <a href="">TransFlow: Transformer as Flow Learner</a>, CVPR 2023.</p>
+                    <p style="text-indent: 20px;">2. <a href="https://arxiv.org/abs/2209.07383">Visual Recognition with Deep Nearest Centroids</a>, ICLR 2023.</p>
+                    <p style="text-indent: 20px;">3. <a href="https://arxiv.org/abs/2301.13487">Adversarial Training of Self-supervised Monocular Depth Estimation against Physical-World Attacks</a>, ICLR 2023.</p>
+                </div>
+                <div>
+                    * <b class="title">Presentations and images/Videos demonstrating the project</b>
+                    <p style="text-indent: 20px;">1.<a href="https://www.youtube.com/watch?app=desktop&v=P0izWYZXA3k&feature=youtu.be">A video for paper "TransFlow: Transformer as Flow Learner".</a></p>
+                    <p style="text-indent: 20px;">2.<a href="https://www.youtube.com/watch?v=LkcRqevAPWE">A video for paper "Adversarial Training of Self-supervised Monocular Depth Estimation against Physical-World Attacks".</a></p>
+                </div>
+                <div>
+                    * <b class="title">Data, Demos and Software Downloads (with documentation)</b>
+                    <p style="text-indent: 20px;">1. <a href="">Paper "TransFlow: Transformer as Flow Learner".</a></p>
+                    <p style="text-indent: 20px;">2. <a href="https://github.com/ChengHan111/DNC">Paper "Visual Recognition with Deep Nearest Centroids".</a></p>
+                    <p style="text-indent: 20px;">3. <a href="https://github.com/Bob-cheng/DepthModelHardening">Paper "Adversarial Training of Self-supervised Monocular Depth Estimation against Physical-World Attacks".</a></p>
+                </div>
+                <!-- * Demos (with documentation)</br>
+                    <i></br>
+                * Software Downloads (with documentation)</br>
+                    <i></br> -->
+               <div>
+                * <b class="title">Patents</b>
+                  <p>None</p>
+               </div>
+               <div>
+                * <b class="title">Other relevant information</b>
+                  <p>None</p>
+               </div>
+               <div>
+                * <b class="title">Broader Impacts</b>
+                <p>The proposed research program is expected to have a direct impact on various engineering applications (e.g., search-and-rescue, construction inspection, and underground mining exploration) and cross-disciplinary research (e.g., robotics, computer vision, and control theory). To contribute to the synergy of autonomous UAVs research, all systems developed in this proposed program will be open-source</p>
+                    <p style="text-indent: 20px;">1. Contribution to society and industry. The proposed project will foster the interplay between a wide range of
+                    fields (e.g., disaster response, criminal justice, resource inspection).</p>
+                    <p style="text-indent: 20px;">2. Contribution to education equity and outreach. The PI is committed to providing long-term
+                    mentoring services to the NTID Center by continuing to give talks on Computer Science careers, cutting-edge
+                    STEM research, and assisting NTID students in entering a field dominated by hearing students, and the PI aims to establish a FIRST Autonomous UVA Competition and Mentor program for local
+                    high schools in Rochester, based on this proposed research program.</p>
+                    <p style="text-indent: 20px;">3. Contribution to higher education. The PI will involve and co-advise both graduate and undergraduate students for senior capstone projects and doctoral/master thesis from the departments of computer science and computer engineering based on the proposed research activities.</p>
+               </div>
+                <div>
+                    * <b class="title">Educational material (with documentation)</b></br>
+                    <p>CMPE-677 Machine Intelligence and CMPE-679 Deep Learning, in the form of class contents and course projects that will offer hands-on exercises for students to develop/implement intelligent UAV systems.</p>
+                <!-- * Awards, prizes (e.g., KDD Cup)</br>
+                    <i></br>
+                * Highlights, Press, ...</br>
+                    <i></br> -->
+                </div>
+               <div>
+                * <b class="title">Acknowledgement</b>
+                <p>This material is based upon work supported by the National Science Foundation under Grant No. (NSF 2242243)</p>
+               </div>
+                <div>
+                    * <b class="title">Disclaimer</b>
+                    <p>Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+                </div>
+                <div>
+                    * <b class="title">Award number</b>
+                    <p style="text-indent: 20px;"><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2242243&HistoricalAwards=false">2242243</a></p>
+                </div>
+                <div>
+                    * <b class="title">Duration</b>
+                    <p>From February 1, 2023 to January 31, 2025</p>
+                </div>
+                <div>
+                    * <b class="title">PI, co-PI(s)</b>
+                    <p>PI: <a href="https://www.rit.edu/directory/dxleec-dongfang-liu">Dongfang Liu</a></p>
+                </div>
+                <div>
+                    * <b class="title">Student(s)</b></br>
+                    <p>James Liang, Chen Han</p>
+                </div>
+                <div>
+                    * <b class="title">Collaborators, etc.</b>
+                    <p style="text-indent: 20px;">1. <a href="https://www.etsu.edu/cas/cj/facultystaff/osbornedl.php">Prof. Dustin Osborne</a> from the Department of Criminal Justice and Criminology at East Tennessee State University, along with Johnson City Police Station (Tennessee).</p>
+                    <p style="text-indent: 20px;">2. <a href="https://www.rit.edu/ntid/">RIT's National Technical Institute for the Deaf (NTID).</a></p>
+                </div>
+                <div>
+                    * <b class="title">Point of Contact</b>
+                    <p>Dr. Dongfang Liu (<b>dongfang.liu@rit.edu</b>)</p>
+                </div>
+                <div>
+                    * <b class="title">Date of Last Update</b>
+                    <p>3/28/2023</p>
+                </div>
+            </div>
+        </content>
+    </div>
+    <!-- 图片轮播 -->
+    <script src="../components/slider/index.js"></script>
+    <script type="text/javascript">
+    // 3秒
+        f(3000,3);
+    </script>
+    </script>
+</body>
+</html>

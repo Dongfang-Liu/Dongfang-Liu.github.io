@@ -8,29 +8,121 @@ http://www.templatemo.com/tm-441-volton
 
 @font-face {
   font-family: 'robotolight';
-  src: url("../fonts/Roboto-Light-webfont.eot");
-  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  src: url('../fonts/Roboto-Light-webfont.eot');
+  src: url('../fonts/Roboto-Light-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'robotoregular';
-  src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url('../fonts/Roboto-Regular-webfont.eot');
+  src: url('../fonts/Roboto-Regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'robotobold';
-  src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url('../fonts/Roboto-Bold-webfont.eot');
+  src: url('../fonts/Roboto-Bold-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /*---------------------------------------------------------
  1. Reset
 -------------------------------------------------------- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,11 +131,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .blue {
-	color: #06C;
+  color: #06c;
 }
 
 .green {
-	color: #090;
+  color: #090;
 }
 
 main {
@@ -118,11 +210,11 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 img {
@@ -153,18 +245,18 @@ input::-moz-focus-inner {
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer;
   -webkit-appearance: button;
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
 }
 
-input[type="search"]:-webkit-search-decoration {
+input[type='search']:-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -197,7 +289,11 @@ a:hover {
   color: #555555;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #555555;
 }
 
@@ -424,7 +520,7 @@ h3.profile-title {
   /* padding: 260px 80px; */
   padding: 20px 20px 400px 20px;
   position: relative;
-  background: url("../img/titlebg.jpg");
+  background: url('../img/titlebg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -485,7 +581,7 @@ h3.profile-title {
 .project-item {
   width: 100%;
   margin-bottom: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 .project-item img {
@@ -537,7 +633,8 @@ h3.profile-title {
 .contact-form {
   margin-top: 40px;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   outline: 0;
   border: 1px solid #aaaaaa;
@@ -545,7 +642,8 @@ h3.profile-title {
   color: #999999;
   margin-bottom: 30px;
 }
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: 0;
 }
 .contact-form .button {
@@ -554,6 +652,179 @@ h3.profile-title {
   color: white;
   text-transform: uppercase;
   border: 0;
+}
+
+/*------ paper ------ */
+
+/* .paper-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 30px;
+} */
+
+/* .paper-item .paper-image {
+  width: 400px;
+  overflow: hidden;
+  margin-right: 100px;
+}
+
+.paper-image img {
+  height: 200px;
+  width: 100%;
+  background-size: contain;
+} */
+
+.paper-year {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 25px;
+  color: #ff4500;
+  font-weight: 400;
+}
+
+.paper-item {
+  margin-bottom: 30px;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.paper-link a {
+  margin-top: 50px;
+  margin-right: 10px;
+  color: orangered;
+  font-weight: bold;
+  border-bottom: 1px solid orangered;
+}
+
+.paper-info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  word-break: break-all;
+}
+.widget-title p i {
+  border: 3px solid black;
+  border-width: 0px 1px 1px 0px;
+  padding: 5px;
+  float: right;
+  margin-top: -13px;
+}
+.widget-title .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.widget-title .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.project-item .project-info {
+  flex: 1;
+  max-width: 40%;
+}
+
+.project-info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  word-break: break-all;
+}
+
+.project-item .project-image {
+  width: 400px;
+  overflow: hidden;
+  margin-right: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.project-item .project-image img {
+  width: 100%;
+}
+
+.project-item .tab-wrap {
+  width: 420px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.project-item .tab-wrap .page-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+.project-item .tab {
+  position: absolute;
+  display: block;
+  bottom: -13px;
+  right: 10px;
+}
+.project-item .tab-item {
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: gray;
+  opacity: 0.5;
+}
+
+.project-item .tab-item a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+
+.project-item .tab-item.cur {
+  background-color: #000;
+}
+
+.project-item .page {
+  position: relative;
+}
+
+.project-item .page .page-item {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.project-item .page .page-item img {
+  width: 100%;
+}
+
+.project-item .page .page-item.active {
+  display: block;
+}
+
+.nsf {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  display: block;
 }
 
 /*---------------------------------------------------------
