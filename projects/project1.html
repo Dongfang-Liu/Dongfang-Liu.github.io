@@ -8,6 +8,7 @@
         <meta name="description" content="UTSA">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link rel="stylesheet" href="../css/normalize.css">
     </head>
     <style>
         .project-container{
@@ -37,6 +38,9 @@
             max-width: 85%;
             margin: 30px auto;
         }
+        .project-content {
+    margin-top: 200px;
+}
         .project-content .title{
             line-height: 30px;
         }
@@ -152,6 +156,101 @@
         border: 1px solid red;
     }
 
+ .tab-wrap {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-bottom: 100px;
+}
+.tab {
+    position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+}
+.tab-wrap .page-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+.tab-item {
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: gray;
+  opacity: 0.5;
+}
+
+.tab-item a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+
+.tab-item.cur {
+  background-color: #000;
+}
+
+content {
+    position: relative;
+}
+.page {
+    position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 80%;
+}
+.page .page-item {
+  width: 100%;
+  display: none;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.page .page-item img {
+    max-height: 400px;
+    background-size: 100%;
+}
+
+.page .page-item.active {
+  display: block;
+}
+
+@media screen and (max-width: 1000px)  {
+    .tab-wrap {    
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+    /* margin-bottom: 30px; */
+    position: relative;
+  }
+  .tab {
+    position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+}
+.page {
+    position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 80%;
+}
+.project-content {
+    margin-top: 30%;
+}
+}
     </style>
 </head>
 <body>
@@ -160,17 +259,53 @@
             <p class="title-text">Vision-Anchored Automation of Bird-Sized UAVs in Unknown Cluttered Indoor Environments</p><img src="../img/nsf.png">
         </div>
         <content>
+                    <div class="tab-wrap">
+                        <div class="tab clearfix">
+                            <div class="tab-item cur">
+                                <a href="javascript:;"></a>
+                            </div>
+                            <div class="tab-item">
+                                <a href="javascript:;"></a>
+                            </div>
+                            <div class="tab-item">
+                                <a href="javascript:;"></a>
+                            </div>
+                            <!-- <div class="tab-item">
+                                <a href="javascript:;"></a>
+                            </div>
+                            <div class="tab-item">
+                                <a href="javascript:;"></a>
+                            </div> -->
+                        </div>
+                        <div class="page">
+                            <div class="page-item active">
+                                <img src="../img/transflow.png" alt="">
+                            </div>
+                            <div class="page-item">
+                                <img src="../img/visual rec.png" alt="">
+                            </div>
+                            <div class="page-item">
+                                <img src="../img/Selfadversial.png" alt="">
+                            </div>
+                            <!-- <div class="page-item">
+                                <img src="../img/visual rec.png" alt="">
+                            </div>
+                            <div class="page-item">
+                                <img src="../img/SG-Net.png" alt="">
+                            </div> -->
+                        </div>
+                   </div>
             <!-- <div class="project-detail-image">
                 <img src="../img/visual rec.png">
             </div> -->
-            <div class="bnner">
+            <!-- <div class="bnner">
                 <div class="nav">
                 <div class="nav_img">
                     <img src="../img/transflow.png" alt="">
                     <img src="../img/visual rec.png" alt="">
                     <img src="../img/Selfadversial.png" alt="">
-                    <!-- <img src="../img/visual rec.png" alt="">
-                    <img src="../img/SG-Net.png" alt=""> -->
+                    <img src="../img/visual rec.png" alt="">
+                    <img src="../img/SG-Net.png" alt="">
                 </div>
             </div>
                 <div class="nav_xiao">
@@ -180,11 +315,11 @@
                         <li></li>
                     </ul>
                 </div>
-                <!-- <div class="nav_left">
+                <div class="nav_left">
                     <div><p></p></div>
                     <div><p></p></div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
             <div class="project-content">
                <div>
                 * <b class="title">Project Goals</b>
@@ -212,7 +347,8 @@
                 <div>
                     * <b class="title">Presentations and images/Videos demonstrating the project</b>
                     <p style="text-indent: 20px;">1.<a href="https://www.youtube.com/watch?app=desktop&v=P0izWYZXA3k&feature=youtu.be">A video for paper "TransFlow: Transformer as Flow Learner".</a></p>
-                    <p style="text-indent: 20px;">2.<a href="https://www.youtube.com/watch?v=LkcRqevAPWE">A video for paper "Adversarial Training of Self-supervised Monocular Depth Estimation against Physical-World Attacks".</a></p>
+                    <p style="text-indent: 20px;">2.<a href="https://www.youtube.com/watch?v=NlzTniUXoqo">A video for paper "Visual Recognition with Deep Nearest Centroids".</a></p>
+                    <p style="text-indent: 20px;">3.<a href="https://www.youtube.com/watch?v=LkcRqevAPWE">A video for paper "Adversarial Training of Self-supervised Monocular Depth Estimation against Physical-World Attacks".</a></p>
                 </div>
                 <div>
                     * <b class="title">Data, Demos and Software Downloads (with documentation)</b>
@@ -297,6 +433,15 @@
     // 3秒
         f(3000,3);
     </script>
+    </script>
+    <script type="text/javascript" src="../components/tab/tab.js"></script>
+    <script type="text/javascript">
+        var tab = new Tab({
+            tabItem :'tab-item',
+            pageItem: 'page-item',
+            cur: 'cur',
+            active: 'active'
+        })
     </script>
 </body>
 </html>

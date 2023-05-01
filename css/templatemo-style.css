@@ -727,17 +727,32 @@ h3.profile-title {
   position: relative;
 }
 
+/* .project-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 30px;
+} */
+
 .project-item {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   margin-bottom: 30px;
 }
-
-.project-item .project-info {
-  flex: 1;
-  max-width: 40%;
-}
+@media screen and (min-width: 500px) {
+  .project-item .project-info {
+    /* flex: 1; */
+    max-width: 35%;
+  }
+  .nsf {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    display: block;
+  }
 
 .project-info p {
   overflow: hidden;
@@ -817,16 +832,86 @@ h3.profile-title {
 .project-item .page .page-item.active {
   display: block;
 }
-
-.nsf {
-  height: 50px;
-  width: auto;
-  position: absolute;
-  right: 50px;
-  top: 0;
-  display: block;
 }
 
+@media screen and (max-width: 1000px) {
+
+  .project-info {
+    margin-top: 150px;
+  }
+
+.project-info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  word-break: break-all;
+}
+
+
+.project-item .tab-wrap {
+  width: 420px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.project-item .tab-wrap .page-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+.project-item .tab {
+  position: absolute;
+  display: block;
+  bottom: -130px;
+  right: 10px;
+}
+.project-item .tab-item {
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: gray;
+  opacity: 0.5;
+}
+
+.project-item .tab-item a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+
+.project-item .tab-item.cur {
+  background-color: #000;
+}
+
+.project-item .page {
+  position: relative;
+}
+
+.project-item .page .page-item {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.project-item .page .page-item img {
+  width: 100%;
+}
+
+.project-item .page .page-item.active {
+  display: block;
+}
+}
+@media screen and (max-width: 1500px) {
+  .nsf {
+    display: none;
+  }
+}
 /*---------------------------------------------------------
  5. Footer
 -------------------------------------------------------- */
