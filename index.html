@@ -24,10 +24,6 @@
         .content-wrapper .project-item {
             line-height: 1.8;
         }
-        /* Extra scroll room so bottom sections (Publications, Sponsors) can reach the top when navigated to */
-        .content-wrapper {
-            padding-bottom: 60vh;
-        }
     </style>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -60,7 +56,7 @@
                     <li><a href="#students"><i class="fa fa-user"></i>Prospective Students</a></li>
                     <li><a href="#alumni"><i class="fa fa-graduation-cap"></i>Alumni</a></li>
                     <li><a href="#services"><i class="fa fa-briefcase"></i>Services</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" onclick="window.open(this.href,'_blank');return false;"><i class="fa fa-google"></i>Publications</a></li>
+                    <li><a href="#publications"><i class="fa fa-google"></i>Publications</a></li>
                 </ul>
             </div>
         </div>
@@ -82,7 +78,7 @@
                 <li><a href="#students"><i class="fa fa-user"></i>Prospective Students</a></li>
                 <li><a href="#alumni"><i class="fa fa-graduation-cap"></i>Alumni</a></li>
                 <li><a href="#services"><i class="fa fa-briefcase"></i>Services</a></li>
-                <li><a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" onclick="window.open(this.href,'_blank');return false;"><i class="fa fa-google"></i>Publications</a></li>
+                <li><a href="#publications"><i class="fa fa-google"></i>Publications</a></li>
             </ul>
         </div> <!-- .main-navigation -->
         <!--<div class="social-icons">-->
@@ -215,13 +211,13 @@
                 </div>
                 <hr>
 
-                <div class="row" id="footer" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/ddmm.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 30px 0; border-radius: 8px;">
+                <div class="row" id="footer" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/ddmm.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 33vh; padding: 40px 0; border-radius: 8px;">
                     <div class="col-md-12">
-                        <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:18px;padding:10px 0;">
-                            <span style="font-style:italic;color:#888;">Thanks to our sponsors</span>
-                            <img src="./img/nsf.png" alt="NSF" style="height:34px;width:auto;object-fit:contain;">
-                            <img src="./img/doe.png" alt="DOE" style="height:30px;width:auto;object-fit:contain;">
-                            <img src="./img/dod.png" alt="DOD" style="height:30px;width:auto;object-fit:contain;">
+                        <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:24px;padding:10px 0;">
+                            <h4 class="widget-title" style="display:inline-block;margin:0 36px 0 0;font-style:normal;">Thanks to our sponsors</h4>
+                            <img src="./img/nsf.png" alt="NSF" style="height:56px;width:auto;object-fit:contain;">
+                            <img src="./img/doe.png" alt="DOE" style="height:50px;width:auto;object-fit:contain;">
+                            <img src="./img/dod.png" alt="DOD" style="height:50px;width:auto;object-fit:contain;">
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
