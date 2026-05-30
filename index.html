@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dongfang Liu's website</title>
-    <meta name="description" content="Dongfang Liu — Purdue University">
+    <title>Dongfang Liu — Purdue University</title>
+    <meta name="description" content="Dongfang Liu, faculty at Purdue University working on applied AI: efficient adaptation and real-world reliability of foundation models.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon (inline SVG, no file needed) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234285F4'/><text x='50' y='71' font-size='56' font-family='Arial,Helvetica,sans-serif' font-weight='700' fill='white' text-anchor='middle'>DL</text></svg>">
+
+    <!-- Open Graph / social preview (set absolute URLs once your domain is known) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dongfang Liu — Purdue University">
+    <meta property="og:description" content="Faculty at Purdue working on applied AI: efficient adaptation and real-world reliability of foundation models.">
+    <meta property="og:image" content="img/DF.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
     <style>
-        /* Unified line spacing for all main-content text */
+        :root {
+            --accent: #2f6090;
+            --accent-hover: #234a70;
+            --ink: #20242a;
+            --ink-soft: #5a626b;
+            --heading: #15191f;
+        }
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--ink);
+        }
+        /* Body copy: comfortable size + rhythm */
         .content-wrapper p,
         .content-wrapper li,
         .content-wrapper .project-item {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16.5px;
             line-height: 1.8;
+            color: var(--ink);
+        }
+        /* Section headings + name in a refined serif */
+        .widget-title {
+            font-family: 'Fraunces', Georgia, serif !important;
+            color: var(--heading);
+            font-weight: 600;
+            letter-spacing: 0.4px;
+        }
+        .profile-title {
+            font-family: 'Fraunces', Georgia, serif !important;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .navigation a,
+        .profile-description {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        /* One unified accent for in-content links */
+        .content-wrapper a {
+            color: var(--accent);
+        }
+        .content-wrapper a:hover {
+            color: var(--accent-hover);
         }
     </style>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
-        <![endif]-->
 
     <div class="responsive-header visible-xs visible-sm">
         <div class="container">
@@ -39,7 +82,7 @@
                 <div class="col-md-12">
                     <div class="top-section">
                         <div class="profile-image">
-                            <img src="img/DF.jpg" backgroundSize="contain" alt="Dongfang Liu">
+                            <img src="img/DF.jpg" alt="Dongfang Liu">
                         </div>
                         <div class="profile-content">
                             <h3 class="profile-title">刘东方<i class="fa fa-exchange" style="margin:0 8px;font-size:0.7em;opacity:0.6;"></i>Dongfang Liu</h3>
@@ -81,22 +124,9 @@
                 <li><a href="#publications"><i class="fa fa-google"></i>Publications</a></li>
             </ul>
         </div> <!-- .main-navigation -->
-        <!--<div class="social-icons">-->
-        <!--<ul>-->
-        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-        <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-        <!--<li><a href="https://scholar.google.com/citations?user=_Voig00AAAAJ&hl=en" target="_blank"><i class="fa fa-google"></i></a></li>-->
-        <!--<li><a href="#"><i class="fa fa-rss"></i></a></li>-->
-        <!--</ul>-->
-        <!--</div> &lt;!&ndash; .social-icons &ndash;&gt;-->
     </div> <!-- .sidebar-menu -->
 
-    <div class="banner-bg" id="top" style="background-image: url('img/Purdue.jpg'); background-size: cover; background-position: center;">
-        <!--<div class="banner-overlay"></div>-->
-        <!-- <div class="welcome-text">
-                <h2>Boiler up</h2>
-            </div> -->
-    </div>
+    <div class="banner-bg" id="top" style="background-image: url('img/Purdue.jpg'); background-size: cover; background-position: center;"></div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
@@ -109,10 +139,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">About Me</h4>
-                            <p> I'm a faculty member in the <a href="https://www.lib.purdue.edu" target="_blank">University Libraries and School of Information Studies</a> at Purdue, with a joint appointment in <a href="https://polytechnic.purdue.edu/academic-areas/acc" target="_blank">Applied and Creative Computing</a>.
-                                Before that, I was an Assistant Professor in the Department of Computer Engineering at the <a href="https://www.rit.edu" target="_blank">Rochester Institute of Technology</a>.
-                                I use AI to tackle real-world problems, and over the past few years I've had the luck of mentoring a bunch of really sharp, hardworking students. Sometimes they even listen to me.
-                                Outside of work, I'm into soccer and tennis (NTRP 3.0-3.5), and I've got two cats, Tiger (小虎) and Meimei (妹妹), who keep the house lively.</p>
+                            <p> I'm a faculty member in the <a href="https://www.lib.purdue.edu" target="_blank" rel="noopener noreferrer">University Libraries and School of Information Studies</a> at Purdue, with a joint appointment in <a href="https://polytechnic.purdue.edu/academic-areas/acc" target="_blank" rel="noopener noreferrer">Applied and Creative Computing</a>.
+                                Before that, I was an Assistant Professor in the Department of Computer Engineering at the <a href="https://www.rit.edu" target="_blank" rel="noopener noreferrer">Rochester Institute of Technology</a>.
+                                I use AI to tackle real-world problems, and over the past few years I've been lucky to mentor a bunch of really sharp, hardworking students. Sometimes they even listen to me.
+                                Outside of work, I'm into soccer and tennis (NTRP 3.0–3.5), and I've got two cats, Tiger (小虎) and Meimei (妹妹), who keep the house lively.</p>
                                 <hr>
                         </div>
                     </div> <!-- #about -->
@@ -128,10 +158,10 @@
                                     My work is in <b>Applied AI</b>, mostly about the <b>post-training and adaptation of foundation models</b>. I've worked on vision, robotics, medicine, reasoning, and science problems. I'm especially interested in getting AI to work with hard-to-reach knowledge, the kind that's one-of-a-kind, restricted, and rarely written down more than once. The goal is to make these models genuinely useful and reliable in places where mistakes are costly. Two questions drive most of my work.
                                 </p>
                                 <p>
-                                    <i class="fa fa-bolt" style="color:#4A7FBF; margin-right:10px; font-size:1.3em;"></i><b>How can we adapt large models efficiently?</b> I work on post-training methods, like parameter-efficient fine-tuning, prompt and representation tuning, and model fusion, that let a pretrained model pick up new tasks with very little data and compute, and few trainable parameters.
+                                    <i class="fa fa-bolt" style="color:#2f6090; margin-right:10px; font-size:1.3em;"></i><b>How can we adapt large models efficiently?</b> I work on post-training methods, like parameter-efficient fine-tuning, prompt and representation tuning, and model fusion, that let a pretrained model pick up new tasks with very little data and compute, and few trainable parameters.
                                 </p>
                                 <p>
-                                    <i class="fa fa-check-circle" style="color:#4A7FBF; margin-right:10px; font-size:1.3em;"></i><b>How can we make them reliable in the real world?</b> I build robust, multimodal systems using fast-and-slow reasoning, calibration, and safety methods, so they stay dependable under distribution shift and adversarial conditions, and hold up when they're used for decisions that matter.
+                                    <i class="fa fa-check-circle" style="color:#2f6090; margin-right:10px; font-size:1.3em;"></i><b>How can we make them reliable in the real world?</b> I build robust, multimodal systems using fast-and-slow reasoning, calibration, and safety methods, so they stay dependable under distribution shift and adversarial conditions, and hold up when they're used for decisions that matter.
                                 </p>
                             </div>
                         </div>
@@ -147,7 +177,7 @@
                         <div class="col-md-12">
                             <div class="project-item">
                                 <p>
-                                    <b>I take one incoming PhD student every year.</b> Before making a funded offer, I usually start with a 4-6 month internship working alongside one of my senior PhD students, a low-pressure way for both of us to see whether it's a good fit. Once you join, I treat my student as an apprentice. We'll work side by side, talking through problems and publishing together, and when you're ready I'll help send you off to a strong next step. At the same time, I count on you to be independent enough to take problems on and move them forward on your own. As an advisor, I'm demanding most of the time and short-tempered periodically, but I'm working on it.
+                                    <b>I take one incoming PhD student every year.</b> Before making a funded offer, I usually start with a 4–6 month internship working alongside one of my senior PhD students, a low-pressure way for both of us to see whether it's a good fit. Once you join, I treat you as an apprentice. We'll work side by side, talking through problems and publishing together, and when you're ready I'll help send you off to a strong next step. At the same time, I count on you to be independent enough to take problems on and move them forward on your own. As an advisor, I'm demanding most of the time and short-tempered periodically, but I'm working on it.
                                 </p>
                             </div>
                         </div>
@@ -163,11 +193,11 @@
                         <div class="col-md-12">
                             <div class="project-item">
                                 <ul style="list-style:none;padding-left:0;margin:0;display:flex;flex-wrap:wrap;gap:12px 32px;">
-                                    <li><a href="https://scholar.google.com/citations?user=VgkEKZwAAAAJ&hl=en" target="_blank">Cheng Han</a></li>
-                                    <li><a href="https://scholar.google.com/citations?user=cR8m4CcAAAAJ&hl=en" target="_blank">James Liang</a></li>
-                                    <li><a href="https://scholar.google.com/citations?hl=en&user=FG9Z3wYAAAAJ" target="_blank">Yuxing Wang</a></li>
-                                    <li><a href="https://scholar.google.com/citations?user=Qob0q_4AAAAJ&hl=en" target="_blank">Taowen Wang</a></li>
-                                    <li><a href="https://scholar.google.com/citations?user=iiLwKSsAAAAJ&hl=en" target="_blank">Runjia Zeng</a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=VgkEKZwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Cheng Han</a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=cR8m4CcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">James Liang</a></li>
+                                    <li><a href="https://scholar.google.com/citations?hl=en&user=FG9Z3wYAAAAJ" target="_blank" rel="noopener noreferrer">Yuxing Wang</a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=Qob0q_4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Taowen Wang</a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=iiLwKSsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Runjia Zeng</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -183,16 +213,13 @@
                         <div class="col-md-12">
                             <div class="project-item">
                                 <ul>
-                                    <li><b>Area Chair</b>: The Association for Computational Linguistics (ACL), 2026- 
-                                    <li><b>Area Chair</b>: The Conference on Computer Vision and Pattern Recognition (CVPR), 2023-
-                                    <li><b>Senior PC</b>: The International Joint Conference on Artificial
-                                        Intelligence (IJCAI), 2023-
-                                    <li><b>Senior PC</b>: The Association for the Advancement of Artificial
-                                        Intelligence (AAAI), 2023-
-                                    <li><b>Associate editor</b>: IEEE Transactions on Circuits and Systems for Video
-                                        Technology (TCSVT), 2023-</li>
-                                    <li><b>Associate editor</b>: Neurocomputing, 2024-</li>
-                                    <li><b>Associate editor</b>: ACM Journal on Autonomous Transportation (JATS), 2023-</li>
+                                    <li><b>Area Chair</b>, The Association for Computational Linguistics (ACL), since 2026</li>
+                                    <li><b>Area Chair</b>, The Conference on Computer Vision and Pattern Recognition (CVPR), since 2023</li>
+                                    <li><b>Senior PC</b>, The International Joint Conference on Artificial Intelligence (IJCAI), since 2023</li>
+                                    <li><b>Senior PC</b>, The Association for the Advancement of Artificial Intelligence (AAAI), since 2023</li>
+                                    <li><b>Associate Editor</b>, IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), since 2023</li>
+                                    <li><b>Associate Editor</b>, Neurocomputing, since 2024</li>
+                                    <li><b>Associate Editor</b>, ACM Journal on Autonomous Transportation (JATS), since 2023</li>
                                 </ul>
                             </div>
                         </div>
@@ -206,7 +233,7 @@
                     <h4 class="widget-title">Publications</h4>
                     <div class="paper-item top">
                         <div class="paper-info">
-                            <p>For my full list of publications, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#4285F4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
+                            <p>For my full list of publications, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#2f6090" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
                         </div>
                     </div>
                 </div>
@@ -225,7 +252,6 @@
                     <div class="col-md-12 text-center">
                         <script type='text/javascript' id='clustrmaps'
                             src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=hzX_uL3VVw4MumSglN7Q5_qHn2xgfao5PAYGLiieOCY'></script>
-                        <!--<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=ubcKPhBPgXUfkNsB2U63LQjLkn3-FjAMmvrqlRrU9WU&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>-->
                     </div>
                 </div>
                 </div>
