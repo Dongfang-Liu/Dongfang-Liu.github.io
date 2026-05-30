@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <style>
         :root {
-            --accent: #2f6090;
-            --accent-hover: #234a70;
-            --ink: #20242a;
-            --ink-soft: #5a626b;
-            --heading: #15191f;
+            --accent: #7c6a4a;        /* champagne bronze */
+            --accent-hover: #5e5038;
+            --ink: #2a2620;           /* warm near-black */
+            --ink-soft: #6b6358;
+            --heading: #1e1a15;
         }
         body {
             font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -62,7 +62,7 @@
             width: fit-content;
             position: relative;
             padding-bottom: 10px;
-            margin-bottom: 6px;
+            margin: 0 0 6px 0;
         }
         .page-section .widget-title::after {
             content: "";
@@ -72,7 +72,7 @@
             width: 100%;
             height: 3px;
             border-radius: 2px;
-            background: linear-gradient(90deg, var(--accent), rgba(47, 96, 144, 0));
+            background: linear-gradient(90deg, var(--accent), rgba(124, 106, 74, 0));
         }
         .profile-title {
             font-family: 'Fraunces', Georgia, serif !important;
@@ -93,20 +93,26 @@
         /* Elegant deep sidebar */
         .sidebar-menu,
         .responsive-header {
-            background-color: #1f2933 !important;
+            background-color: #2b2521 !important;
         }
         .navigation a:hover {
             background-color: rgba(255, 255, 255, 0.05);
         }
         /* Soft card blocks for each section */
         .content-wrapper .page-section {
-            background: #f7f9fc;
-            border: 1px solid #e9edf3;
+            background: #fcfbf8;
+            border: 1px solid #efe9e0;
             border-radius: 14px;
             padding: 24px 32px;
             margin-bottom: 22px;
-            box-shadow: 0 1px 3px rgba(25, 40, 65, 0.04);
+            box-shadow: 0 1px 3px rgba(55, 45, 30, 0.05);
         }
+        /* Champagne cards: full at top, fading to near-white at the bottom */
+        #about    { background: #eae0cd !important; border-color: #ddd1b6 !important; }
+        #interests{ background: #f0e9dd !important; border-color: #e5dbc9 !important; }
+        #students { background: #f4efe7 !important; border-color: #e9e0d3 !important; }
+        #alumni   { background: #f8f5f0 !important; border-color: #ede5da !important; }
+        #services { background: #fcfbf8 !important; border-color: #efe9e0 !important; }
         .content-wrapper .page-section > .row {
             margin-left: 0;
             margin-right: 0;
@@ -122,6 +128,15 @@
             box-shadow: none;
             padding: 0;
             margin: 0;
+        }
+        /* Breathing room between the banner and the first card */
+        .content-wrapper > .page-section:first-child {
+            margin-top: 32px;
+        }
+        /* Even top/bottom spacing inside each card */
+        .content-wrapper .page-section p:last-child,
+        .content-wrapper .page-section ul:last-child {
+            margin-bottom: 0;
         }
     </style>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -282,7 +297,7 @@
                     <h4 class="widget-title">Publications</h4>
                     <div class="paper-item top">
                         <div class="paper-info">
-                            <p>For my full list of publications, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#2f6090" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
+                            <p>For my full list of publications, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#7c6a4a" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
                         </div>
                     </div>
                 </div>
