@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <polygon points="27,16 19,53 49,42"/>
+  <polygon points="73,16 81,53 51,42"/>
+  <ellipse cx="50" cy="60" rx="30" ry="27"/>
+</svg>
