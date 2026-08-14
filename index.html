@@ -140,9 +140,12 @@
             padding-left: 0;
             padding-right: 0;
         }
-        /* Publications card: same frame as the other sections, photo band showing through */
+        /* Publications card: same frame as the other sections, photo as the card's own background */
         #publications {
-            background: transparent !important;
+            background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/ddmm.jpg') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
             border-color: #efe9e0 !important;
         }
         /* Recent publications list */
@@ -337,7 +340,7 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
                     </div>
                 </div>
 
-                <div class="bg-band" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/ddmm.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 8px; padding: 20px 50px 16vh;">
+                <div class="bg-band">
 
                 <!-- RECENT PUBLICATIONS -->
                 <div class="page-section" id="publications">
@@ -504,6 +507,16 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
             return s.toLowerCase().replace(/[^a-z0-9]+/g, '');
         }
 
+        // Display order of venue groups; venues not listed fall to the end alphabetically
+        var VENUE_ORDER = ['CVPR', 'ICML', 'ECCV', 'ICCV', 'NEURIPS', 'ICLR', 'ACL', 'EMNLP', 'AAAI', 'IJCAI'];
+        function venueKey(v) {
+            return v.split(/[\s(]/)[0].toUpperCase();
+        }
+        function venueRank(k) {
+            var i = VENUE_ORDER.indexOf(k);
+            return i === -1 ? 999 : i;
+        }
+
         function extraPubItems() {
             return EXTRA_PUBS.filter(function (p) {
                 return p.year === currentYear;
@@ -518,6 +531,7 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
                 var link = p.url ? ' <a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">[paper]</a>' : '';
                 return {
                     isConf: p.isConf,
+                    venueKey: venueKey(p.venue),
                     mdate: '9999',   // manual entries float to the top of their group
                     normTitle: normTitle(p.title),
                     html: (authorsHtml ? authorsHtml + '. ' : '') + esc(p.title) + '. ' + venue + '.' + link
@@ -528,6 +542,9 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
         function render(items) {
             items.sort(function (a, b) {
                 if (a.isConf !== b.isConf) return a.isConf ? -1 : 1;
+                var ra = venueRank(a.venueKey), rb = venueRank(b.venueKey);
+                if (ra !== rb) return ra - rb;
+                if (a.venueKey !== b.venueKey) return a.venueKey.localeCompare(b.venueKey);
                 return b.mdate.localeCompare(a.mdate);
             });
             listEl.innerHTML = items.map(function (it) { return '<li>' + it.html + '</li>'; }).join('');
@@ -569,21 +586,25 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
                         return esc(name);
                     }).join(', ');
 
-                    var venue;
+                    var venue, vkey;
                     var bt = rec.querySelector('booktitle');
                     if (bt) {
-                        venue = '<i>' + esc(bt.textContent) + ' ' + currentYear + '</i>';
+                        var vname = bt.textContent.replace(/\s*\(\d+\)\s*/, ' ').trim();
+                        vkey = venueKey(vname);
+                        venue = '<i>' + esc(vname) + ' ' + currentYear + '</i>';
                     } else {
                         var j = rec.querySelector('journal');
+                        vkey = venueKey(j ? j.textContent : '');
                         venue = '<i>' + esc(j ? j.textContent : '') + '</i>, ' + currentYear;
                     }
 
                     var eeEl = rec.querySelector('ee');
                     var link = eeEl ? ' <a href="' + esc(eeEl.textContent) + '" target="_blank" rel="noopener noreferrer">[paper]</a>' : '';
 
-                    // conferences first, then journals; newest first within each group
+                    // grouped by venue via render(); newest first within each group
                     items.push({
                         isConf: !!bt,
+                        venueKey: vkey,
                         mdate: rec.getAttribute('mdate') || '',
                         normTitle: normTitle(title),
                         html: authorsHtml + '. ' + esc(title) + '. ' + venue + '.' + link
