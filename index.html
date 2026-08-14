@@ -148,6 +148,28 @@
             padding: 0;
             margin: 0;
         }
+        /* Recent publications list */
+        #recent-pub-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 12px 0 0 0;
+        }
+        #recent-pub-list li {
+            margin-bottom: 14px;
+            padding-left: 1.2em;
+            position: relative;
+        }
+        #recent-pub-list li::before {
+            content: "\25B8";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .pub-note {
+            font-size: 14px !important;
+            color: var(--ink-soft) !important;
+            margin-top: 10px;
+        }
         /* Breathing room between the banner and the first card */
         .content-wrapper > .page-section:first-child {
             margin-top: 32px;
@@ -196,7 +218,7 @@
                     <li><a href="#students"><i class="fa fa-user"></i>Prospective Students</a></li>
                     <li><a href="#alumni"><i class="fa fa-graduation-cap"></i>Alumni</a></li>
                     <li><a href="#services"><i class="fa fa-briefcase"></i>Services</a></li>
-                    <li><a href="#publications"><i class="fa fa-google"></i>Publications</a></li>
+                    <li><a href="#publications"><i class="fa fa-google"></i>Recent Publications</a></li>
                 </ul>
             </div>
         </div>
@@ -218,7 +240,7 @@
                 <li><a href="#students"><i class="fa fa-user"></i>Prospective Students</a></li>
                 <li><a href="#alumni"><i class="fa fa-graduation-cap"></i>Alumni</a></li>
                 <li><a href="#services"><i class="fa fa-briefcase"></i>Services</a></li>
-                <li><a href="#publications"><i class="fa fa-google"></i>Publications</a></li>
+                <li><a href="#publications"><i class="fa fa-google"></i>Recent Publications</a></li>
             </ul>
         </div> <!-- .main-navigation -->
     </div> <!-- .sidebar-menu -->
@@ -310,9 +332,8 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
                                     <li><b>Area Chair</b>, The Conference on Computer Vision and Pattern Recognition (CVPR), since 2023</li>
                                     <li><b>Senior PC</b>, The International Joint Conference on Artificial Intelligence (IJCAI), since 2023</li>
                                     <li><b>Senior PC</b>, The Association for the Advancement of Artificial Intelligence (AAAI), since 2023</li>
-                                    <li><b>Associate Editor</b>, IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), since 2023</li>
+                                    <li><b>Senior Associate Editor</b>, IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), since 2026</li>
                                     <li><b>Associate Editor</b>, Neurocomputing, since 2024</li>
-                                    <li><b>Associate Editor</b>, ACM Journal on Autonomous Transportation (JATS), since 2023</li>
                                 </ul>
                             </div>
                         </div>
@@ -321,12 +342,26 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
 
                 <div class="bg-band" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/ddmm.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 8px; padding: 20px 50px 16vh;">
 
-                <!-- PUBLICATIONS -->
+                <!-- RECENT PUBLICATIONS -->
                 <div class="page-section" id="publications" style="background:transparent;">
-                    <h4 class="widget-title">Publications</h4>
+                    <h4 class="widget-title">Recent Publications</h4>
                     <div class="paper-item top">
                         <div class="paper-info">
-                            <p>For my full list of publications, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#7c6a4a" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
+                            <!-- Static fallback list (shown if the live DBLP fetch fails); the script below replaces it with fresh data on every visit -->
+                            <ul id="recent-pub-list">
+                                <li>Changyu Liu, James Chenhao Liang, Wenhao Yang, Yiming Cui, Jinghao Yang, Tianyang Wang, Qifan Wang, <b>Dongfang Liu*</b>, Cheng Han. A-SelecT: Automatic Timestep Selection for Diffusion Transformer Representation Learning. <i>CVPR 2026</i>. <a href="https://arxiv.org/abs/2603.25758" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Shirou Jing, Chunshu Wu, Chuan Liu, Arghavan Bahadorinejad, Feitong Qiao, <b>Dongfang Liu</b>, Tong Geng. InfoDLM: an Information-Adaptive Framework for Discrete Diffusion Language Model Pretraining. <i>ICML 2026</i>. <a href="https://openreview.net/forum?id=c5fRyYtMos" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Feng He, Zhenting Wang, Qifan Wang, Qiang Guan, <b>Dongfang Liu*</b>, Ruixiang Tang, Qiankun Li. HIVE: Understanding Post-Hallucination Reasoning in Vision Language Models. <i>ECCV 2026</i>. <a href="https://arxiv.org/abs/2607.07507" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Yiyang Liu, James Chenhao Liang, Heng Fan, Wenhao Yang, Yiming Cui, Xiaotian Han, Lifu Huang, <b>Dongfang Liu</b>, Qifan Wang, Cheng Han. All You Need is One: Capsule Prompt Tuning with a Single Vector. <i>NeurIPS 2026</i>. <a href="https://arxiv.org/abs/2510.16670" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Runjia Zeng, James Chenhao Liang, Cheng Han, Zhiwen Cao, Jiahao Liu, Xiaojun Quan, Yingjie Victor Chen, Lifu Huang, Tong Geng, Qifan Wang, <b>Dongfang Liu*</b>. Probabilistic Token Alignment for Large Language Model Fusion. <i>NeurIPS 2026</i>. <a href="https://arxiv.org/abs/2509.17276" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Yijun Hu, Bing Fan, Xin Gu, Haiqing Ren, <b>Dongfang Liu</b>, Heng Fan, Libo Zhang. Robust Ego-Exo Correspondence with Long-Term Memory. <i>NeurIPS 2026</i>. <a href="https://arxiv.org/abs/2510.11417" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Changyu Liu, Yiyang Liu, Taowen Wang, Qiao Zhuang, James Chenhao Liang, Wenhao Yang, Renjing Xu, Qifan Wang, <b>Dongfang Liu*</b>, Cheng Han. On-the-Fly VLA Adaptation via Test-Time Reinforcement Learning. <i>ACL 2026</i>. <a href="https://aclanthology.org/2026.acl-long.1863/" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Tingxu Han, Wei Song, Ziqi Ding, Ziming Li, Chunrong Fang, Yuekang Li, <b>Dongfang Liu</b>, Zhenyu Chen, Zhenting Wang. Debiasing LLMs by Masking Unfairness-Driving Attention Heads. <i>ACL Findings 2026</i>. <a href="https://aclanthology.org/2026.findings-acl.1893/" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Yanshu Li, Jianjiang Yang, Ziteng Yang, Bozheng Li, Ligong Han, Hongyang He, Zhengtao Yao, Yingjie Victor Chen, Songlin Fei, <b>Dongfang Liu</b>, Ruixiang Tang. Make LVLMs Focus: Context-Aware Attention Modulation for Better Multimodal In-Context Learning. <i>AAAI 2026</i>. <a href="https://doi.org/10.1609/aaai.v40i8.37591" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                                <li>Pegah Ahadian, Wei Xu, <b>Dongfang Liu</b>, Qiang Guan. Ethics of trustworthy AI in healthcare: Challenges, principles, and practical pathways. <i>Neurocomputing</i>, 2026. <a href="https://doi.org/10.1016/j.neucom.2025.131942" target="_blank" rel="noopener noreferrer">[paper]</a></li>
+                            </ul>
+                            <p class="pub-note">* denotes corresponding author.</p>
+                            <p>For the full list, please refer to my <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <svg viewBox="0 0 24 24" width="22" height="22" style="vertical-align:middle;margin-left:6px;" aria-hidden="true"><path fill="#7c6a4a" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></p>
                         </div>
                     </div>
                 </div>
@@ -357,6 +392,229 @@ Outside of work, I love traveling the world and playing tennis (3.0–3.5), and 
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/min/plugins.min.js"></script>
     <script src="js/min/main.min.js"></script>
+
+    <!-- Auto-updating Recent Publications (data source: DBLP API) -->
+    <script>
+    (function () {
+        var DBLP_PID = '51/5217';          // your DBLP author id
+        var MY_NAME = 'Dongfang Liu';      // name to bold in author lists
+
+        // Corresponding-author papers: add the dblp record key of each paper
+        // where you are the corresponding author, and an asterisk will be
+        // appended to your bolded name automatically.
+        // Find the key on dblp under "export record" (e.g. 'conf/acl/LiuLWZLYXWLH26').
+        var CORRESPONDING_KEYS = [
+            'conf/acl/LiuLWZLYXWLH26'   // On-the-Fly VLA Adaptation, ACL 2026
+        ];
+
+        // Papers already on Google Scholar but not yet indexed by DBLP.
+        // Add one entry per paper; once DBLP indexes it, the duplicate is
+        // removed automatically (matched by title), so you never need to
+        // delete entries here.
+        //   authors:       full author list, in order
+        //   title:         paper title
+        //   venue:         e.g. 'CVPR 2026' or 'Neurocomputing'
+        //   isConf:        true for conferences, false for journals
+        //   year:          publication year (entry only shows in that year)
+        //   corresponding: true if you are the corresponding author
+        //   url:           optional paper link
+        var EXTRA_PUBS = [
+            {
+                authors: ['Changyu Liu', 'Yiyang Liu', 'Taowen Wang', 'Qiao Zhuang', 'James Chenhao Liang', 'Wenhao Yang', 'Renjing Xu', 'Qifan Wang', 'Dongfang Liu', 'Cheng Han'],
+                title: 'On-the-Fly VLA Adaptation via Test-Time Reinforcement Learning',
+                venue: 'ACL 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: true,
+                url: 'https://aclanthology.org/2026.acl-long.1863/'
+            },
+            {
+                authors: ['Shirou Jing', 'Chunshu Wu', 'Chuan Liu', 'Arghavan Bahadorinejad', 'Feitong Qiao', 'Dongfang Liu', 'Tong Geng'],
+                title: 'InfoDLM: an Information-Adaptive Framework for Discrete Diffusion Language Model Pretraining',
+                venue: 'ICML 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: false,
+                url: 'https://openreview.net/forum?id=c5fRyYtMos'
+            },
+            {
+                authors: ['Changyu Liu', 'James Chenhao Liang', 'Wenhao Yang', 'Yiming Cui', 'Jinghao Yang', 'Tianyang Wang', 'Qifan Wang', 'Dongfang Liu', 'Cheng Han'],
+                title: 'A-SelecT: Automatic Timestep Selection for Diffusion Transformer Representation Learning',
+                venue: 'CVPR 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: true,
+                url: 'https://arxiv.org/abs/2603.25758'
+            },
+            {
+                authors: ['Yiyang Liu', 'James Chenhao Liang', 'Heng Fan', 'Wenhao Yang', 'Yiming Cui', 'Xiaotian Han', 'Lifu Huang', 'Dongfang Liu', 'Qifan Wang', 'Cheng Han'],
+                title: 'All You Need is One: Capsule Prompt Tuning with a Single Vector',
+                venue: 'NeurIPS 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: false,
+                url: 'https://arxiv.org/abs/2510.16670'
+            },
+            {
+                authors: ['Runjia Zeng', 'James Chenhao Liang', 'Cheng Han', 'Zhiwen Cao', 'Jiahao Liu', 'Xiaojun Quan', 'Yingjie Victor Chen', 'Lifu Huang', 'Tong Geng', 'Qifan Wang', 'Dongfang Liu'],
+                title: 'Probabilistic Token Alignment for Large Language Model Fusion',
+                venue: 'NeurIPS 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: true,
+                url: 'https://arxiv.org/abs/2509.17276'
+            },
+            {
+                authors: ['Feng He', 'Zhenting Wang', 'Qifan Wang', 'Qiang Guan', 'Dongfang Liu', 'Ruixiang Tang', 'Qiankun Li'],
+                title: 'HIVE: Understanding Post-Hallucination Reasoning in Vision Language Models',
+                venue: 'ECCV 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: true,
+                url: 'https://arxiv.org/abs/2607.07507'
+            },
+            {
+                authors: ['Yijun Hu', 'Bing Fan', 'Xin Gu', 'Haiqing Ren', 'Dongfang Liu', 'Heng Fan', 'Libo Zhang'],
+                title: 'Robust Ego-Exo Correspondence with Long-Term Memory',
+                venue: 'NeurIPS 2026',
+                isConf: true,
+                year: 2026,
+                corresponding: false,
+                url: 'https://arxiv.org/abs/2510.11417'
+            }
+        ];
+
+        // Titles to never show, even if DBLP indexes them under the current year
+        var EXCLUDE_TITLES = [
+            'HyperFM: A Efficient Hyperspectral Foundation Model with Spectral Grouping'
+        ];
+
+        var listEl = document.getElementById('recent-pub-list');
+        if (!listEl) return;
+
+        var currentYear = new Date().getFullYear();
+
+        function esc(s) {
+            return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        // dblp appends disambiguation suffixes like "0001" to some names
+        function cleanName(s) {
+            return s.replace(/\s+\d{4}$/, '');
+        }
+
+        function normTitle(s) {
+            return s.toLowerCase().replace(/[^a-z0-9]+/g, '');
+        }
+
+        function extraPubItems() {
+            return EXTRA_PUBS.filter(function (p) {
+                return p.year === currentYear;
+            }).map(function (p) {
+                var authorsHtml = p.authors.map(function (name) {
+                    if (name === MY_NAME) {
+                        return '<b>' + esc(name) + (p.corresponding ? '*' : '') + '</b>';
+                    }
+                    return esc(name);
+                }).join(', ');
+                var venue = p.isConf ? '<i>' + esc(p.venue) + '</i>' : '<i>' + esc(p.venue) + '</i>, ' + p.year;
+                var link = p.url ? ' <a href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">[paper]</a>' : '';
+                return {
+                    isConf: p.isConf,
+                    mdate: '9999',   // manual entries float to the top of their group
+                    normTitle: normTitle(p.title),
+                    html: (authorsHtml ? authorsHtml + '. ' : '') + esc(p.title) + '. ' + venue + '.' + link
+                };
+            });
+        }
+
+        function render(items) {
+            items.sort(function (a, b) {
+                if (a.isConf !== b.isConf) return a.isConf ? -1 : 1;
+                return b.mdate.localeCompare(a.mdate);
+            });
+            listEl.innerHTML = items.map(function (it) { return '<li>' + it.html + '</li>'; }).join('');
+        }
+
+        fetch('https://dblp.org/pid/' + DBLP_PID + '.xml')
+            .then(function (res) {
+                if (!res.ok) throw new Error('DBLP request failed');
+                return res.text();
+            })
+            .then(function (text) {
+                var xml = new DOMParser().parseFromString(text, 'text/xml');
+                var records = xml.querySelectorAll('dblpperson > r > article, dblpperson > r > inproceedings');
+                var items = [];
+
+                Array.prototype.forEach.call(records, function (rec) {
+                    // skip arXiv preprints and other informal entries
+                    if (rec.getAttribute('publtype') === 'informal') return;
+
+                    var yEl = rec.querySelector('year');
+                    if (!yEl || parseInt(yEl.textContent, 10) !== currentYear) return;
+
+                    var titleEl = rec.querySelector('title');
+                    if (!titleEl) return;
+                    var title = titleEl.textContent.replace(/\.\s*$/, '');
+
+                    var excluded = EXCLUDE_TITLES.some(function (t) {
+                        return normTitle(t) === normTitle(title);
+                    });
+                    if (excluded) return;
+
+                    var isCorresponding = CORRESPONDING_KEYS.indexOf(rec.getAttribute('key')) !== -1;
+
+                    var authorsHtml = Array.prototype.map.call(rec.querySelectorAll('author'), function (a) {
+                        var name = cleanName(a.textContent);
+                        if (name === MY_NAME) {
+                            return '<b>' + esc(name) + (isCorresponding ? '*' : '') + '</b>';
+                        }
+                        return esc(name);
+                    }).join(', ');
+
+                    var venue;
+                    var bt = rec.querySelector('booktitle');
+                    if (bt) {
+                        venue = '<i>' + esc(bt.textContent) + ' ' + currentYear + '</i>';
+                    } else {
+                        var j = rec.querySelector('journal');
+                        venue = '<i>' + esc(j ? j.textContent : '') + '</i>, ' + currentYear;
+                    }
+
+                    var eeEl = rec.querySelector('ee');
+                    var link = eeEl ? ' <a href="' + esc(eeEl.textContent) + '" target="_blank" rel="noopener noreferrer">[paper]</a>' : '';
+
+                    // conferences first, then journals; newest first within each group
+                    items.push({
+                        isConf: !!bt,
+                        mdate: rec.getAttribute('mdate') || '',
+                        normTitle: normTitle(title),
+                        html: authorsHtml + '. ' + esc(title) + '. ' + venue + '.' + link
+                    });
+                });
+
+                // add manual entries not yet on DBLP; skip any the DBLP list already covers
+                var seen = {};
+                items.forEach(function (it) { seen[it.normTitle] = true; });
+                extraPubItems().forEach(function (it) {
+                    if (!seen[it.normTitle]) items.push(it);
+                });
+
+                if (items.length === 0) {
+                    listEl.innerHTML = '<li>No ' + currentYear + ' publications indexed yet. Please check <a href="https://scholar.google.com/citations?user=uICY0vEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> for the latest.</li>';
+                    return;
+                }
+
+                render(items);
+            })
+            .catch(function () {
+                // DBLP unreachable; render the manual entries if any, otherwise
+                // the static fallback list in the HTML stays visible
+                var items = extraPubItems();
+                if (items.length > 0) render(items);
+            });
+    })();
+    </script>
 </body>
 
 </html>
